@@ -6,7 +6,9 @@ const GlobalContext = createContext()
 
 function GlobalProvider({ children }) {
 
-    return <GlobalContext.Provider value={useTasks}>
+    const taskData = useTasks()
+
+    return <GlobalContext.Provider value={taskData}>
         {children}
     </GlobalContext.Provider>
 

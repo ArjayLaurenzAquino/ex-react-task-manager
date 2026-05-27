@@ -5,8 +5,7 @@ import TaskRow from "../components/TaskRow"
 
 function TaskList() {
 
-    const useTasks = useContext(GlobalContext)
-    const { tasks, addTask, removeTask, updateTask } = useTasks()
+    const { tasks, addTask, removeTask, updateTask } = useContext(GlobalContext)
 
     return <table>
         <thead>
